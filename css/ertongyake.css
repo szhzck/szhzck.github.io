@@ -1,0 +1,17 @@
+/* CSS Document */
+
+#zSlider{margin:0px auto; width:990px; overflow:hidden;}
+#picshow{z-index:-999; float:right; width:785px;}
+#picshow_img{width:420px; height:200px; overflow:hidden; float:left;}
+#picshow_img li{width:420px; height:200px; overflow:hidden; float:left; display:none;}
+#picshow_img img{width:420px; height:200px;}
+
+#picshow_tx{ float:right; width:265px; height:160px; padding:20px 50px; background-color:#264184; color:#fff; font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; line-height:22px; letter-spacing:3px;}
+#picshow_tx li{ line-height:25px; text-align:left; overflow:hidden; margin:auto;}
+
+
+#select_btn{width:205px; height:200px; color:#4a4a4a; float:left; display:inline; left:6px; position:absolute;}
+#select_btn li{ width:180px; height:48px; cursor:pointer; line-height:48px;padding-left:25px; z-index:-999; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; font-weight:bold;margin:2px auto auto auto; text-align:left;}
+#select_btn li:hover{background:url(../images/test_03.png) left top no-repeat; color:#fff; z-index:999; }
+#select_btn li.current{background:url(../images/test_03.png) left top no-repeat; color:#fff;z-index:999; }
+#select_btn li.current:hover{background:url(../images/test_03.png) left top no-repeat; color:#fff;z-index:999; }
