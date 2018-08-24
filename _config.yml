@@ -1,29 +1,29 @@
 # Site settings
-title: 价值为锚
-SEOTitle: 价值为锚 | 刺猬偷腥的博客
-header-img: img/post-bg-desk.jpg
-email: kainvest@sina.com
-description: "Risk comes from not knowing what you're doing."
-keyword: "价值为锚, 刺猬偷腥, 刺猬偷腥的博客, 投资, 价值投资, 低估买高估卖, 新能源汽车, 新能源, 天齐锂业, 锂电池"
-url: "http://zoustephen.github.io"          # your host, for absolute URL
+title: 惠泽康悦齿科
+SEOTitle: 惠泽康悦齿科 | 请您见证惠泽的口碑！
+header-img: img/home-bg-menmian.jpg
+email: szhzck@outlook.com
+description: "恭喜你！从此拥有灿烂笑容！"
+keyword: "惠泽康悦齿科, 惠泽齿科, 牙周病, 种植牙, 正畸"
+url: "http://szhzck.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/zoustephen/zoustephen.github.io.git" # you code repository
+github_repo: "https://github.com/szhzck/szhzck.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Only when the tide goes out，you will discover who has been swimming naked!"
-sidebar-avatar: /img/avatar_s.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "请您见证惠泽的口碑！"
+sidebar-avatar: /img/avatar_hz.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     3263957117
-zhihu_username:     stephenzou
+#weibo_username:     3263957117
+#zhihu_username:     stephenzou
 #github_username:    zoustephen
 #facebook_username:  
-jianshu_username:   847f95b81107
-twitter_username:   zoustephen
+#jianshu_username:   847f95b81107
+#twitter_username:   zoustephen
 
 
 
@@ -62,26 +62,26 @@ kramdown:
 
 # Gitalk
 
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 3bacb33b6d751248f579                            #生成的clientID
-  clientSecret: c1fd0a16eb25df5d7c4363b93051d53d2a682d49   #生成的clientSecret
-  repo: zoustephen.github.io    #仓库名称
-  owner: zoustephen    #github用户名
-  admin: zoustephen
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
-  id: location.pathname,
+#gitalk:
+#  enable: true    #是否开启Gitalk评论
+#  clientID: 3bacb33b6d751248f579                            #生成的clientID
+#  clientSecret: c1fd0a16eb25df5d7c4363b93051d53d2a682d49   #生成的clientSecret
+#  repo: zoustephen.github.io    #仓库名称
+#  owner: zoustephen    #github用户名
+#  admin: zoustephen
+#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+#  id: location.pathname,
   
 
 # 统计
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: c5f7e511e896ca87e8314a14dc43c587
+#ba_track_id: c5f7e511e896ca87e8314a14dc43c587
 
 # Google Analytics
-ga_track_id: 'UA-124360883-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+#ga_track_id: 'UA-124360883-1'            # Format: UA-xxxxxx-xx
+#ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -102,16 +102,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "雪球专栏",
-        href: "https://xueqiu.com/8223138566/column"
+        title: "大众点评",
+        href: "http://www.dianping.com/shop/92079401"
     },{
-        title: "新浪博客",
-        href: "http://blog.sina.com.cn/u/3263957117"
+        title: "美团优惠",
+        href: "https://www.meituan.com/yiliao/158857915/"
     },{
-        title: "深交所互动易",
-        href: "http://irm.cninfo.com.cn/szse/index.html"
-    },{
-        title: "摩尔金融",
-        href: "https://www.moer.cn/authorHome.htm?theId=100001649"
+        title: "百度糯米",
+        href: "https://www.nuomi.com/shop/2266100"
     }
 ]
