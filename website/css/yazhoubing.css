@@ -1,0 +1,17 @@
+/* CSS Document */
+
+#zSlider{margin:0px auto; width:990px; overflow:hidden;}
+#picshow{z-index:-999; float:right; width:835px;}
+#picshow_img{width:388px; height:238px; overflow:hidden; float:left;border:1px solid #bbbbbb;  }
+#picshow_img li{width:388px; height:238px; float:left; display:none; }
+#picshow_img img{width:388px; height:238px;}
+
+#picshow_tx{ float:right; width:330px; height:200px; padding:20px 50px; background-color:#264184; color:#fff; font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; line-height:25px; letter-spacing:3px;}
+#picshow_tx li{ line-height:25px; text-align:left; overflow:hidden; margin:auto; font-size:12px; }
+
+
+#select_btn{width:155px; height:240px; color:#4a4a4a; float:left; display:inline; left:6px; position:absolute;}
+#select_btn li{ width:130px; height:38px; cursor:pointer; line-height:38px;padding-left:25px; z-index:-999; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; font-weight:bold; margin:2px auto auto auto; text-align:left;}
+#select_btn li:hover{background:url(../images/test_02.png) left top no-repeat; color:#fff; z-index:999; }
+#select_btn li.current{background:url(../images/test_02.png) left top no-repeat; color:#fff;z-index:999; }
+#select_btn li.current:hover{background:url(../images/test_02.png) left top no-repeat; color:#fff;z-index:999; }
