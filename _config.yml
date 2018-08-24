@@ -102,6 +102,9 @@ service-worker: true
 # Friends
 friends: [
     {
+        title: "惠泽官网",
+        href: "https://szhzck.github.io/website/"
+    },{
         title: "大众点评",
         href: "http://www.dianping.com/shop/92079401"
     },{
