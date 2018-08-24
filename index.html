@@ -1,91 +1,42 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<link href="css/css.css" rel="stylesheet" type="text/css" />
-<title>首页</title>
-</head>
+---
+layout: page
+description: "任凭世界再乱，只想以低估价买好企业"
+---
 
-<body>
-<div id="bg"><img  src="images/biaozhi.png" ></div>
-
-
-<div id="head">
-<div class="logo"><a href="index.html"><img src="images/logo.png" width="310" height="52" /></a></div>
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 </div>
+<hr>
+{% endfor %}
 
-<div id="index_main">
-<div id="index_left">
-<div id="hdp"><img src="images/01.jpg" width="470" height="232" /></div>
-
-<div id="leftnr">
-<div class="mentou"><img src="images/mentou.jpg" width="113" height="115" /></div>
-<div class="about"><a href="about.html"><img src="images/about.jpg" width="113" height="115" /></a></div>
-<div class="address"><img src="images/address.jpg" width="232" height="115" /></div>
-<div class="clearfloat"></div>
-</div>
-</div>
-
-<div id="index_middle">
-<div id="middlepic"><img src="images/ys.jpg" width="232" height="114" /></div>
-<div class="middlenr">
-<div class="pic1"><img src="images/wenda.jpg" width="114" height="115" /></div>
-<div class="pic2"><a href="anli.html"><img src="images/anli.jpg" width="114" height="115" /></a></div>
-<div class="pic1"><img src="images/erweima.jpg" width="114" height="115" /></div>
-<div class="pic2"><img src="images/ys2.jpg" width="114" height="115" /></div>
-</div>
-<div class="clearfloat"></div>
-</div>
-
-<div id="index_right">
-<div id="rightnr">
-<div class="pic3"><a href="zhongzhiya.html"><img src="images/zhongzhiya.jpg" width="114" height="115" /></a></div>
-<div class="pic4"><img src="images/jiaozheng.jpg" width="114" height="115" border="0" usemap="#Map" />
-  <map name="Map" id="Map">
-    <area shape="rect" coords="5,4,112,55" href="yachijiaozheng.html" />
-    <area shape="rect" coords="6,64,109,114" href="yachimeirong.html" />
-  </map>
-</div>
-<div class="pic3"><img src="images/meibai.jpg" width="114" height="115" /></div>
-<div class="pic4"><img src="images/xingxiang.jpg" width="114" height="115" /></div>
-<div class="pic5"><img src="images/yatong.jpg" width="114" height="115" /></div>
-<div class="pic6"><img src="images/baya.jpg" width="114" height="115" /></div>
-</div>
-</div>
-<div class="clearfloat"></div>
-</div>
-
-<div class="clearfloat"></div>
-
-<div id="copyright">
-
-
-<div class="copynr">
-<div class="fdh"><a href="about.html">惠泽康悦</a>&nbsp;&nbsp; |&nbsp; &nbsp; <a href="zhongzhiya.html">服务项目</a> &nbsp;&nbsp;  |&nbsp; &nbsp; <a href="zhuanjiatuandui.html">专家团队</a> &nbsp;&nbsp; |&nbsp; &nbsp; <a href="huiyuan.html">会员中心</a> &nbsp;&nbsp;  |&nbsp; &nbsp; <a href="anli.html">经典案例</a>&nbsp;&nbsp; |&nbsp; &nbsp;惠康动态</div>
-<div class="beian">COPYRIGHT 2007-2017 惠泽康悦 齿科 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 深圳宝安区西乡港隆城购物中心二楼</div>
-</div>
-
-<div class="tel"><img src="images/tel.jpg" width="220" height="36" /></div>
-
-</div>
-
-<script type="text/javascript">
-	window.onresize = window.onload = function(){
-					var w,h
-					if(!!(window.attachEvent && !window.opera))
-					{
-						h = document.documentElement.clientHeight;
-						w = document.documentElement.clientWidth;
-					}else{
-						h =	window.innerHeight;
-						w = window.innerWidth;
-					}
-		document.getElementById('msg').value  ='窗口大小：' + 'width:' + w + '; height:'+h;
-				var bgImg = document.getElementById('bg').getElementsByTagName('img')[0];
-				bgImg.width = (w - 50);
-				bgImg.height= (h-50) ;		
-										
-			}			
-</script>
-</body>
-</html>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

@@ -1,0 +1,117 @@
+# Site settings
+title: 价值为锚
+SEOTitle: 价值为锚 | 刺猬偷腥的博客
+header-img: img/post-bg-desk.jpg
+email: kainvest@sina.com
+description: "Risk comes from not knowing what you're doing."
+keyword: "价值为锚, 刺猬偷腥, 刺猬偷腥的博客, 投资, 价值投资, 低估买高估卖, 新能源汽车, 新能源, 天齐锂业, 锂电池"
+url: "http://zoustephen.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/zoustephen/zoustephen.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Only when the tide goes out，you will discover who has been swimming naked!"
+sidebar-avatar: /img/avatar_s.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     3263957117
+zhihu_username:     stephenzou
+#github_username:    zoustephen
+#facebook_username:  
+jianshu_username:   847f95b81107
+twitter_username:   zoustephen
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
+
+# Gitalk
+
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 3bacb33b6d751248f579                            #生成的clientID
+  clientSecret: c1fd0a16eb25df5d7c4363b93051d53d2a682d49   #生成的clientSecret
+  repo: zoustephen.github.io    #仓库名称
+  owner: zoustephen    #github用户名
+  admin: zoustephen
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  id: location.pathname,
+  
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: c5f7e511e896ca87e8314a14dc43c587
+
+# Google Analytics
+ga_track_id: 'UA-124360883-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "雪球专栏",
+        href: "https://xueqiu.com/8223138566/column"
+    },{
+        title: "新浪博客",
+        href: "http://blog.sina.com.cn/u/3263957117"
+    },{
+        title: "深交所互动易",
+        href: "http://irm.cninfo.com.cn/szse/index.html"
+    },{
+        title: "摩尔金融",
+        href: "https://www.moer.cn/authorHome.htm?theId=100001649"
+    }
+]
